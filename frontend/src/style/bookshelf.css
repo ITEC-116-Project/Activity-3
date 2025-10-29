@@ -1,0 +1,316 @@
+.main-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background-color: #2A2A2C;
+  width: 100%;
+  height: 6rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 63rem;
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-between;
+  color: #000000;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.add-btn {
+  padding: 0 1em;
+  border: solid 2px #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', san-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+hr {
+  height: 2px;
+  background-color: #000000;
+  margin: 1em 0;
+}
+
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  background: #F0F0F0;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.bookshelf {
+  display: grid;
+  grid-template-columns: 15em 15em 15em 15em;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+.book-card {
+  display: grid;
+  flex-direction: column;
+  padding: 1em;
+  max-width: 15em;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.book-card > div:nth-child(2) {
+  flex-grow: 2;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.book-cover {
+  max-width: 12em;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+
+.book-title, .author, .category {
+  margin: 0;
+  font-weight: 500;
+}
+
+.book-title {
+  font-size: 16px;
+  color: #000000;
+}
+
+.author {
+  font-size: 14px;
+  color: #808080;
+}
+
+.category {
+  font-size: 12px;
+  color: #808080;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: end;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.icons{
+  cursor: pointer;
+}
+
+/* === MODAL STYLES === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-content {
+  background-color: #fff;
+  width: 380px;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.cover-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-placeholder {
+  width: 160px;
+  height: 200px;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.cover-btn {
+  padding: 0 1em;
+  background-color: #FFFFFF;
+  border: solid 2px #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', san-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.cover-btn:hover {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  color: #808080;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.modal-content input {
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 2px;
+  outline: none;
+}
+
+.modal-content input::placeholder {
+  color: transparent;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  padding: 0 1em;
+  color: #FF0000;
+  background-color: #FFFFFF;
+  border: solid 2px #FF0000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', san-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.cancel-btn:hover {
+  color: #FFFFFF;
+  background-color: #FF0000;
+}
+
+.confirm-btn {
+  padding: 0 1em;
+  color: #0BA6FF;
+  background-color: #FFFFFF;
+  border: solid 2px #0BA6FF;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', san-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  color: #FFFFFF;
+  background-color: #0BA6FF;
+}
+
+/* === DELETE MODAL === */
+.delete-modal {
+  background-color: #fff;
+  width: 300px;
+  padding: 25px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.delete-modal p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.delete-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  padding: 0 1em;
+  color: #FF0000;
+  background-color: #FFFFFF;
+  border: solid 2px #FF0000;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Poppins', san-serif;
+  font-weight: 600;
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #FFFFFF;
+  background-color: #FF0000;
+}
+
