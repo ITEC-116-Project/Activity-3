@@ -225,9 +225,9 @@ const Bookshelf = () => {
                     src={previewUrl}
                     alt="Cover Preview"
                     style={{
-                      maxWidth: '200px',
-                      maxHeight: '200px',
-                      objectFit: 'contain',
+                      width: '160px',
+                      height: '200px',
+                      objectFit: 'cover',
                       marginTop: '10px',
                     }}
                   />
